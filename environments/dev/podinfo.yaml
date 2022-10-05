@@ -13,6 +13,8 @@ spec:
     path: apps/helm/charts/podinfo
     repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
     targetRevision: HEAD
+    helm:
+      ui.color: "#34577c"
   syncPolicy:
     automated:
       prune: true
