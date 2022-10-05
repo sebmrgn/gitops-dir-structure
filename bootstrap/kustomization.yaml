@@ -10,8 +10,8 @@ resources:
 - https://raw.githubusercontent.com/argoproj-labs/applicationset/v0.2.0/manifests/install.yaml
 
 # Local resources
-- install/namespace.yaml
-- install/ingress-nginx.yaml
+#- base/namespace.yaml
+- base/ingress-nginx.yaml
 
 # Local patches
 patchesStrategicMerge:
