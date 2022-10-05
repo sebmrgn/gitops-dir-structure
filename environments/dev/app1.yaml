@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev-app-name
+  namespace: app-name
+spec:
+  destination:
+    namespace: app-name
+    server: 'https://XXXXXXXXXXXXXXX.eu-west-2.eks.amazonaws.com'
+    source:
+      path: apps/helm/charts/app1
+      repoURL: 'git@github.com:sebmrgn/gitops-dir-structure.git'
+      targetRevision: HEAD
+      helm:
+        parameters:
+          - name: fullNameOverride
+            value: test
+          - name: authFrontend.tag
+            value: test
+    project: test
+    syncPolicy:
+      automated:
+        prune: true
