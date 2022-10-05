@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: podinfo
+  name: dev_apps
   namespace: default
 spec:
   project: default
   source:
     repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
     targetRevision: HEAD
-    path: apps/helm/charts/podinfo
+    path: apps/helm/charts
 #  source:
 #    chart: argo-cd-test-app
 #    repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
