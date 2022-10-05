@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     namespace: app-name
-    server: 'https://XXXXXXXXXXXXXXX.eu-west-2.eks.amazonaws.com'
+    server: 'https://kubernetes.default.svc'
     source:
       path: apps/helm/charts/app1
       repoURL: 'git@github.com:sebmrgn/gitops-dir-structure.git'
