@@ -14,7 +14,8 @@ spec:
     repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
     targetRevision: HEAD
     helm:
-      ui.color: "#83577e"
+      parameters:
+        ui.color: "#83577e"
   syncPolicy:
     automated:
       prune: true
