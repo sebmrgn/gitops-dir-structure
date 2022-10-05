@@ -12,10 +12,10 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: default
-  helm:
-    parameters:
-      - name: ui.colour
-        value: "#34577c"
+#  helm:
+#    parameters:
+#      - name: ui.colour
+#        value: "#34577c"
   syncPolicy:
     automated:
       prune: true
