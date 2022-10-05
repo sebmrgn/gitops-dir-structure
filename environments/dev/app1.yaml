@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: dev-app-name
-  namespace: app-name
+  name: app1
+  namespace: default
 spec:
   destination:
-    namespace: app-name
+    namespace: app1
     server: 'https://kubernetes.default.svc'
     source:
       path: apps/helm/charts/app1
