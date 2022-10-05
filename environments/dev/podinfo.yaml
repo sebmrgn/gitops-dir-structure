@@ -15,7 +15,8 @@ spec:
     targetRevision: HEAD
     helm:
       parameters:
-        - replica.count: 2
+        - name: replica.count
+          value: 2
   syncPolicy:
     automated:
       prune: true
