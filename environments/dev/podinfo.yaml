@@ -15,7 +15,7 @@ spec:
     targetRevision: HEAD
     helm:
       parameters:
-        ui.color: "#83577e"
+        replica.count: 2
   syncPolicy:
     automated:
       prune: true
