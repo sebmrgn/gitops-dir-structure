@@ -11,4 +11,4 @@ spec:
     path: apps/helm/charts/podinfo
   destination:
     server: https://kubernetes.default.svc
-    namespace: guestbook
+    namespace: default
