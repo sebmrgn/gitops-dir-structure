@@ -8,13 +8,7 @@ spec:
   source:
     repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
     targetRevision: HEAD
-    path: ./apps/helm/charts/podinfo
-#  source:
-#    chart: argo-cd-test-app
-#    repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
-#    targetRevision: 1.0
-#    helm:
-#      releaseName: test
+    path: apps/helm/charts/podinfo
   destination:
     server: https://kubernetes.default.svc
     namespace: default
