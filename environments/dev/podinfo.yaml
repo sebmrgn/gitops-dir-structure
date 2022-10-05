@@ -5,16 +5,16 @@ metadata:
   namespace: default
 spec:
   project: default
-#  source:
-#    repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
-#    targetRevision: HEAD
-#    path: apps/helm/charts/podinfo
   source:
-    chart: argo-cd-test-app
     repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
-    targetRevision: 1.0
-    helm:
-      releaseName: test
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: default
+    targetRevision: HEAD
+    path: apps/helm/charts/podinfo
+#  source:
+#    chart: argo-cd-test-app
+#    repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
+#    targetRevision: 1.0
+#    helm:
+#      releaseName: test
+#  destination:
+#    server: https://kubernetes.default.svc
+#    namespace: default
