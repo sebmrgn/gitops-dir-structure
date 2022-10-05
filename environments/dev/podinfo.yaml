@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app1
-  namespace: argocd
+  name: podinfo
+  namespace: default
 spec:
   project: default
   source:
     repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
     targetRevision: HEAD
-    path: apps/helm/charts/app1
+    path: apps/helm/charts/podinfo
   destination:
     server: https://kubernetes.default.svc
     namespace: guestbook
