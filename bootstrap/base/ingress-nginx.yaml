@@ -14,7 +14,7 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   rules:
-  - host: HOSTNAME_REPLACE
+  - host: www.google.com
     http:
       paths:
       - path: /
@@ -24,7 +24,3 @@ spec:
             name: argocd-server
             port:
               name: https
-  tls:
-  - hosts:
-    - HOSTNAME_REPLACE
-    secretName: argocd-secret
