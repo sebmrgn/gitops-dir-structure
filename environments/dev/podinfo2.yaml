@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: podinfo2
+  namespace: default
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
+    targetRevision: HEAD
+    path: apps/helm/charts/podinfo
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
