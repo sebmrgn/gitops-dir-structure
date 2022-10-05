@@ -2,22 +2,13 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app1
-  namespace: default
+  namespace: argocd
 spec:
+  project: default
+  source:
+    repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
+    targetRevision: HEAD
+    path: apps/helm/charts/app1
   destination:
-    namespace: app1
-    server: 'https://kubernetes.default.svc'
-    source:
-      path: apps/helm/charts/app1
-      repoURL: 'git@github.com:sebmrgn/gitops-dir-structure.git'
-      targetRevision: HEAD
-      helm:
-        parameters:
-          - name: fullNameOverride
-            value: test
-          - name: authFrontend.tag
-            value: test
-    project: test
-    syncPolicy:
-      automated:
-        prune: true
+    server: https://kubernetes.default.svc
+    namespace: guestbook
