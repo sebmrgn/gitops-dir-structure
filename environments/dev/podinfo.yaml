@@ -10,7 +10,7 @@ spec:
     namespace: default
   project: default
   source:
-    path: apps/helm/charts
+    path: apps/manfiests
     repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
     targetRevision: HEAD
   syncPolicy:
