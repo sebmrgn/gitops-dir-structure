@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: https://github.com/sebmrgn/gitops-dir-structure.git
     targetRevision: HEAD
-    path: ./apps/helm/charts/podinfo
+    path: apps/helm/charts/podinfo
 
   # Destination cluster and namespace to deploy the application
   destination:
