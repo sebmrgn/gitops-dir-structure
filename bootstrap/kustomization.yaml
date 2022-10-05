@@ -14,7 +14,7 @@ resources:
 - base/ingress-nginx.yaml
 
 # Local patches
-patchesStrategicMerge:
-  - overlays/cm-argocd-known-hosts.yaml
+#patchesStrategicMerge:
+#  - overlays/cm-argocd-known-hosts.yaml
 
 namespace: argocd
