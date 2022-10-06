@@ -16,7 +16,7 @@ spec:
     helm:
       parameters:
         - name: replicaCount
-          value: 2
+          value: "2"
   syncPolicy:
     automated:
       prune: true
